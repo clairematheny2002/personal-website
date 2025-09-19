@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Arvo";
+  src: url("./fonts/Arvo/Arvo-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("./fonts/inter/Inter-Regular.otf") format("opentype");
+}
+
+:root {
+  --background: #333333;
+  --foreground: #FFFFFF;
+}
+
+.name {
+  font-family: "Arvo";
+  font-size: 70px;
+  text-align: center;
+  color: var(--foreground);
+  position: absolute;
+  top: 78px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.role {
+  font-family: "inter"
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
