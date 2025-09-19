@@ -21,13 +21,14 @@
   font-size: 70px;
   text-align: center;
   color: var(--foreground);
-  position: absolute;
+  padding-top: 78px;
+  /* position: absolute;
   top: 78px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
 }
 
-.role {
+.title {
   font-family: "inter"
 }
 
