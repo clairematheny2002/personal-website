@@ -3,12 +3,18 @@
 @font-face {
   font-family: "Arvo";
   src: url("./fonts/Arvo/Arvo-Bold.ttf") format("truetype");
-  font-style: normal;
+  font-style: bold;
 }
 
 @font-face {
   font-family: "inter";
-  src: url("./fonts/inter/Inter-Regular.otf") format("opentype");
+  src: url("./fonts/inter/Inter-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("./fonts/inter/Inter-Bold.otf") format("opentype");
+  font-weight: bold;
 }
 
 :root {
@@ -16,19 +22,109 @@
   --foreground: #FFFFFF;
 }
 
-.name {
-  font-family: "Arvo";
-  font-size: 70px;
-  text-align: center;
-  color: var(--foreground);
-  position: absolute;
-  top: 78px;
-  left: 50%;
-  transform: translateX(-50%);
+html {
+  font-size: 8.64px; /* was 12px */
 }
 
-.role {
-  font-family: "inter"
+.name {
+  font-family: "Arvo";
+  font-weight: bold;
+  font-size: 86px; /* was 120px */
+  text-align: center;
+  color: var(--foreground);
+  padding-top: 56px; /* was 78px */
+}
+
+.title {
+  font-family: "inter";
+  font-size: 37px; /* was 52px */
+  text-align: center;
+  color: var(--foreground);
+  padding-bottom: 81px; /* was 113px */
+}
+
+.description {
+  position: absolute;
+  font-family: "inter";
+  font-weight: bold;
+  font-size: 16px; /* was 20px */
+  text-align: left;
+  color: var(--background);
+  top: 120px; /* was 200px */
+  left: 0;
+}
+
+.socials {
+  /* position: absolute; */
+  font-family: "inter";
+  font-size: 15px;
+  color: var(--background);
+  top: 200px;
+  grid-column: 1;
+  text-decoration: underline;
+}
+
+.socials.github {
+  z-index: 3;
+}
+
+.socials.linkedin {
+  z-index: 2;
+}
+
+.socials.email {
+  z-index: 1;
+}
+
+.centered-image-container {
+  position: relative;
+  width: 772px; /* was 1072px */
+  margin: 0 auto;
+}
+
+.centered-image {
+  position: absolute;
+  left: 0;
+}
+
+.centered-image.top-image {
+  left: 0;
+}
+
+.centered-image.bottom-image {
+  left: 0;
+  top: 36px; /* was 50px */
+  margin-top: -1.5px;
+}
+
+.centered-image.middle-image {
+  left: 0;
+  top: 0;
+}
+
+.centered-image-inner-container {
+  position: relative;
+  width: 740px;   /* was 1027px */
+  height: 334px;  /* was 463px */
+  left: 16px;     /* was 22px */
+  top: 54px;      /* was 75px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-image-inner-inner-container {
+  position: relative;
+  width: 288px;   /* was 400px */
+  height: 250px;  /* was 300px */
+}
+
+.centered-image.headshot {
+  border-radius: 122px; /* was 170px */
+  border: 3px solid #777777; /* was 4px */
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 body {
