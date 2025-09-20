@@ -10,6 +10,7 @@ export default function Home() {
       <Title title ="web dev"> </Title>
       <div>
         <Image src="/images/Frame11.png"alt="top of computer" width={1072} height={78.17} className="centered-image top-image"></Image>
+        <Image src="/images/Frame10.png"alt="computer screen" width={1072} height={524} className="centered-image middle-image"></Image>
         <Image src="/images/Frame12.png"alt="bottom of computer" width={1072} height={547.17} className="centered-image bottom-image"></Image>
       </div>
     </>

@@ -22,17 +22,13 @@
   text-align: center;
   color: var(--foreground);
   padding-top: 78px;
-  /* position: absolute;
-  top: 78px;
-  left: 50%;
-  transform: translateX(-50%); */
-  /* flex box? */
 }
 
 .centered-image {
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 0;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 0;
   margin-top: -1px;
 }
 
@@ -44,8 +40,11 @@
   margin-top: -1.5px;
 }
 
-
-
+.centered-image.middle-image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .title {
   font-family: "inter";
