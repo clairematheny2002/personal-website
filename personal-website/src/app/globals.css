@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "inter";
-  src: url("./fonts/inter/Inter-Regular.otf") format("opentype");
+  src: url("./fonts/inter/Inter-Medium.otf") format("opentype");
 }
 
 :root {
@@ -18,7 +18,7 @@
 
 .name {
   font-family: "Arvo";
-  font-size: 70px;
+  font-size: 120px;
   text-align: center;
   color: var(--foreground);
   padding-top: 78px;
@@ -29,8 +29,29 @@
   /* flex box? */
 }
 
+.centered-image {
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 0;
+  margin-top: -1px;
+}
+
+.centered-image.top-image {
+  padding-top: 113px;
+}
+
+.centered-image.bottom-image {
+  margin-top: -1.5px;
+}
+
+
+
+
 .title {
-  font-family: "inter"
+  font-family: "inter";
+  font-size: 52px;
+  text-align: center;
+  color: var(--foreground);
 }
 
 body {
