@@ -3,7 +3,7 @@
 @font-face {
   font-family: "Arvo";
   src: url("./fonts/Arvo/Arvo-Bold.ttf") format("truetype");
-  font-style: normal;
+  font-style: bold;
 }
 
 @font-face {
@@ -11,46 +11,120 @@
   src: url("./fonts/inter/Inter-Medium.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "inter";
+  src: url("./fonts/inter/Inter-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+
 :root {
   --background: #333333;
   --foreground: #FFFFFF;
 }
 
+html {
+  font-size: 8.64px; /* was 12px */
+}
+
 .name {
   font-family: "Arvo";
-  font-size: 120px;
+  font-weight: bold;
+  font-size: 86px; /* was 120px */
   text-align: center;
   color: var(--foreground);
-  padding-top: 78px;
-}
-
-.centered-image {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 0;
-  margin-top: -1px;
-}
-
-.centered-image.top-image {
-  padding-top: 113px;
-}
-
-.centered-image.bottom-image {
-  margin-top: -1.5px;
-}
-
-.centered-image.middle-image {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  padding-top: 56px; /* was 78px */
 }
 
 .title {
   font-family: "inter";
-  font-size: 52px;
+  font-size: 37px; /* was 52px */
   text-align: center;
   color: var(--foreground);
+  padding-bottom: 81px; /* was 113px */
+}
+
+.description {
+  position: absolute;
+  font-family: "inter";
+  font-weight: bold;
+  font-size: 16px; /* was 20px */
+  text-align: left;
+  color: var(--background);
+  top: 120px; /* was 200px */
+  left: 0;
+}
+
+.socials {
+  /* position: absolute; */
+  font-family: "inter";
+  font-size: 15px;
+  color: var(--background);
+  top: 200px;
+  grid-column: 1;
+  text-decoration: underline;
+}
+
+.socials.github {
+  z-index: 3;
+}
+
+.socials.linkedin {
+  z-index: 2;
+}
+
+.socials.email {
+  z-index: 1;
+}
+
+.centered-image-container {
+  position: relative;
+  width: 772px; /* was 1072px */
+  margin: 0 auto;
+}
+
+.centered-image {
+  position: absolute;
+  left: 0;
+}
+
+.centered-image.top-image {
+  left: 0;
+}
+
+.centered-image.bottom-image {
+  left: 0;
+  top: 36px; /* was 50px */
+  margin-top: -1.5px;
+}
+
+.centered-image.middle-image {
+  left: 0;
+  top: 0;
+}
+
+.centered-image-inner-container {
+  position: relative;
+  width: 740px;   /* was 1027px */
+  height: 334px;  /* was 463px */
+  left: 16px;     /* was 22px */
+  top: 54px;      /* was 75px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-image-inner-inner-container {
+  position: relative;
+  width: 288px;   /* was 400px */
+  height: 250px;  /* was 300px */
+}
+
+.centered-image.headshot {
+  border-radius: 122px; /* was 170px */
+  border: 3px solid #777777; /* was 4px */
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 body {
