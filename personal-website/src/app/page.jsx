@@ -17,9 +17,9 @@ export default function Home() {
             <Image src="/images/ponyHeadshot.png"alt="headshot" width={100} height={100} className="centered-image headshot"></Image>
             <p className="description"> new grad, new bugs, new portfolio! welcome to my corner of the web :)</p>
             <div style={{position: "absolute", display: "grid", top: "180px"}}>
-              <a className="socials github" href="https://github.com/clairematheny2002">github</a>
-              <a className = "socials linkedin" href="https://www.linkedin.com/in/claire-matheny/">linkedin</a>
-              <a className = "socials email" href="">email</a>
+              <a className="socials github" href="https://github.com/clairematheny2002" target="_blank">github</a>
+              <a className = "socials linkedin" href="https://www.linkedin.com/in/claire-matheny/" target="_blank">linkedin</a>
+              <a className = "socials email" href="mailto:cmatheny2002@gmail.com">email</a>
             </div>
           </div>
         <div>
