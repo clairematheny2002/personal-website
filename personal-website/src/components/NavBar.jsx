@@ -1,15 +1,9 @@
 import React from 'react';
-import './NavBar.css';
 const Navbar = () => {
   return (
-<nav className="navbar">
-  <div className="navbar-left">
-    <a href="/" className="logo">
-      ShopNow
-    </a>
-  </div>
-  <div className="navbar-center">
-    <ul className="nav-links">
+<nav>
+  <div>
+    <ul>
       <li>
         <a href="/subpage1">Products</a>
       </li>

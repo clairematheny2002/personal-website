@@ -1,6 +1,4 @@
-import "../globals.css";
-
 export default function Home() {
   return (
-    <p> HELLO </p>
+    <p className="name"> Hello, world.  </p>
   )}

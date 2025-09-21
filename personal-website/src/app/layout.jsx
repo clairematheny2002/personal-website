@@ -1,6 +1,6 @@
 import "@fontsource/arvo";
-import "./globals.css";
-import Navbar from "./components/NavBar";
+import "../styles/globals.css";
+import Navbar from "../components/NavBar";
 
 export const metadata = {
   title: "Create Next App",

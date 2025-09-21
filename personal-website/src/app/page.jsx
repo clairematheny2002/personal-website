@@ -1,7 +1,7 @@
-import Name from "./components/Name";
-import Title from "./components/Title";
+import Name from "../components/Name";
+import Title from "../components/Title";
 import Image from 'next/image'
-import "./globals.css";
+// import "../styles/globals.css";
 
 export default function Home() {
   return (
